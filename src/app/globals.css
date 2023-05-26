@@ -1,0 +1,362 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* login.form */
+.container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://wallpaperaccess.com/full/4746283.jpg");
+  height: 100vh;
+}
+
+.card-login {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container-login {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-container-login label {
+  margin-bottom: 5px;
+}
+
+.input-container-login input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.error-login {
+  color: #ff4d4f;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.button-login {
+  background-color: #1890ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.button-login:hover {
+  background-color: #40a9ff;
+}
+
+.link-login {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.link-login a {
+  color: #1890ff;
+  text-decoration: none;
+}
+
+.link-login a:hover {
+  text-decoration: underline;
+}
+
+/* pa rehistro ka? */
+.container-register {
+  display: flex;
+  justify-content: center;
+  background-image: url("https://wallpaperaccess.com/full/4746283.jpg");
+  align-items: center;
+  height: 100vh;
+}
+
+.card-register {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+  max-width: 100%;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container-register {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-container-register label {
+  margin-bottom: 5px;
+}
+
+.input-container-register input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.error-register {
+  color: #ff4d4f;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.button-register {
+  background-color: #1890ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.button-register:hover {
+  background-color: #40a9ff;
+}
+
+.button-cancel {
+  background-color: #ddd;
+  color: #555;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.button-cancel:hover {
+  background-color: #ccc;
+}
+
+.link-register {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.link-register a {
+  color: #1890ff;
+  text-decoration: none;
+}
+
+.link-register a:hover {
+  text-decoration: underline;
+}
+
+.password-match {
+  color: #ff4d4f;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+
+/*homepage*/
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.album-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.album-container {
+  width: 200px;
+  margin: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.album-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: #555;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal h2 {
+  margin-top: 0;
+}
+
+.modal input,
+.modal button {
+  margin-top: 10px;
+}
+
+.membutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.membutton button {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  margin-left: 25%;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.membutton button:hover {
+  background-color: #45a049;
+}
+
+.modal {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close {
+  background-color: transparent;
+  border: none;
+  color: #999;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.photo-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selected-photo {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.photo-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.edit-input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-right: 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+.edit-button,
+.delete-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  background-color: #0056b3;
+}
+
+.edit-button:disabled,
+.delete-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.edit-button:not(:last-child) {
+  margin-right: 10px;
+}
+
